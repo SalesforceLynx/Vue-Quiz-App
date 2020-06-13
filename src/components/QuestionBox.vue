@@ -9,7 +9,7 @@
     <hr class="my-4">
 
     <b-list-group >
-      <b-list-group-item v-for="(answer, index) in answers" 
+      <b-list-group-item v-for="(answer, index) in shuffledAnswers" 
          :key="index"
          @click.prevent="selectAnswer(index)"
          :class="selectedIndex === index ? 'selected' : ''">
